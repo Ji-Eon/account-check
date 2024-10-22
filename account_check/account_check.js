@@ -8,5 +8,5 @@ function isValidPassword(password) {
     return PASSWORD_REGEX.test(password);
   }
     
-  // emailForm 함수를 내보냅니다.
+  // export emailForm
   module.exports = { isValidEmail, isValidPassword };

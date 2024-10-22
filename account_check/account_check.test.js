@@ -1,6 +1,5 @@
 const { isValidEmail, isValidPassword } = require('./account_check');
 
-// 이메일 테스트
 test('Returns Valid Email true', () => {
   expect(isValidEmail('test@example.com')).toBe(true);
 });
@@ -22,7 +21,7 @@ test('Returns false for an invalid password (missing special character)', () => 
 });
 
 test('Returns false for an invalid password (missing number)', () => {
-  expect(isValidPassword('NoNumbers!')).toBe(false);  // 숫자가 없으므로 false 반환해야 함
+  expect(isValidPassword('NoNumbers!')).toBe(false);
 });
 test('Returns false for an invalid password (missing letter)', () => {
   expect(isValidPassword('12345678!')).toBe(false);
